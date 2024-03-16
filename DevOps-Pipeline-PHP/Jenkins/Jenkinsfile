@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh """
                 cd DevOps-Pipeline-PHP/laravel-app
-                ansible-playbook playbook-dcompose.yml 
+                ansible-playbook playbook-dcompose.yml  // Disable all services and re-running them again, ignore instead
                 """
             }
         }
